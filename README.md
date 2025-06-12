@@ -9,6 +9,13 @@ Transform your goals into actionable, structured plans with AI precision. TaskAg
 ![FastAPI](https://img.shields.io/badge/FastAPI-Latest-teal)
 ![Streamlit](https://img.shields.io/badge/Streamlit-Latest-red)
 
+## Best AI Project: TaskAgent Pro (200–300 words)
+What I built:
+TaskAgent Pro is an advanced AI agent system designed to convert high-level goals into detailed, actionable plans. Leveraging the Gemini 1.5 Flash model, it employs a multi-agent architecture—Planner, Search, and Summarizer agents—coordinated via LangGraph. The Planner agent decomposes goals into subtasks, the Search agent enriches plans with real-time web research, and the Summarizer agent delivers concise, actionable summaries. The system features a modern Streamlit web UI and a robust FastAPI backend, supporting both interactive and API-driven workflows.
+
+Why it excites me:
+TaskAgent Pro excites me because it demonstrates the practical power of AI agents to automate complex cognitive workflows. By integrating real-time web search and multi-agent orchestration, it goes beyond static planning tools, creating dynamic, context-aware plans that adapt to user needs. The project showcases end-to-end product thinking: from clean code and modular architecture to a user-friendly interface and thorough documentation. It also highlights my ability to blend state-of-the-art language models with practical software engineering, making AI accessible and useful for productivity and project management. Seeing users transform vague ambitions into clear, achievable steps with the help of TaskAgent Pro is deeply rewarding, and it drives my passion fobuilding intelligent, human-centric tools.
+
 ## ✨ Features
 
 - **🧠 AI-Powered Planning**: Advanced Gemini 1.5 Flash model creates detailed, step-by-step plans for any goal
