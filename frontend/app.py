@@ -301,7 +301,7 @@ if run_button:
             response = requests.post(
                 "http://127.0.0.1:8000/plan-task/", 
                 json={"goal": goal}, 
-                timeout=30
+                timeout=90
             )
             
             # Clear loading and show results
@@ -320,15 +320,16 @@ if run_button:
                 
                 # Plan section
                 st.markdown("""
-                <div class="results-container">
-                    <div class="result-header">
-                        <span class="result-icon">📋</span>
-                        <span class="result-title">Strategic Action Plan</span>
-                    </div>
-                </div>
-                """, unsafe_allow_html=True)
+<div class="results-container">
+    <div class="result-header">
+        <span class="result-icon">📋</span>
+        <span class="result-title">Strategic Action Plan</span>
+    </div>
+</div>
+""", unsafe_allow_html=True)
                 
-                st.code(data["plan"], language="markdown")
+                st.markdown("\n".join([f"- {item}" for item in data["plan"]]))
+
                 
                 # Summary section
                 st.markdown("""

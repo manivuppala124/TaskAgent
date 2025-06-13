@@ -9,9 +9,9 @@ class TaskRequest(BaseModel):
     goal: str
 
 @app.post("/plan-task/")
-def plan_task_api(req: TaskRequest):
+async def plan_task_api(req: TaskRequest):
     try:
-        return run_task_graph(req.goal)
+        return await run_task_graph(req.goal)
     except Exception as e:
         print("❌ ERROR TRACEBACK ❌")
         traceback.print_exc()

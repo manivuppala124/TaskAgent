@@ -1,0 +1,6 @@
+first run
+venv\Scripts\activate
+for backend
+D:\TaskAgent> uvicorn api.main:app --reload
+for frontend
+D:\TaskAgent> streamlit run frontend/app.py
