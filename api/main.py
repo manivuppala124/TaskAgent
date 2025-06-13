@@ -2,6 +2,15 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import traceback
 from app.langgraph.task_graph import run_task_graph
+from fastapi.middleware.cors import CORSMiddleware
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Or specify your frontend domain for security
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 app = FastAPI()
 
