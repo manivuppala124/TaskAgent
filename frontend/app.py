@@ -299,7 +299,7 @@ if run_button:
         try:
             # Make API request
             response = requests.post(
-                "http://127.0.0.1:8000/plan-task/", 
+                "https://taskagent.onrender.com/", 
                 json={"goal": goal}, 
                 timeout=90
             )
